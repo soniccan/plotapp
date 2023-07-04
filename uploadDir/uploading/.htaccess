@@ -1,0 +1,6 @@
+# <FilesMatch "\.(php)$">
+# SetEnvIf Referer "^https://www\.yamagiwalab\.jp" Ref1
+# Order Deny,Allow
+# Deny from all
+# Allow from env=Ref1
+# </FilesMatch>

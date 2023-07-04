@@ -1,0 +1,9 @@
+AuthType Basic
+AuthUserFile /home/deepsports/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Project Member Area"
+require valid-user
+
+<Files ~ "^.(htpasswd|htaccess)$">
+    deny from all
+</Files>
